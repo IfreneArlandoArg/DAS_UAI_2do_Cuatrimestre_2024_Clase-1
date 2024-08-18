@@ -38,7 +38,11 @@
             this.btnAlta = new System.Windows.Forms.Button();
             this.btnBaja = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbAltaBaja = new System.Windows.Forms.RadioButton();
+            this.rbModificacion = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvPersonas)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dtgvPersonas
@@ -51,6 +55,7 @@
             this.dtgvPersonas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgvPersonas.Size = new System.Drawing.Size(693, 235);
             this.dtgvPersonas.TabIndex = 0;
+            this.dtgvPersonas.SelectionChanged += new System.EventHandler(this.dtgvPersonas_SelectionChanged);
             // 
             // label1
             // 
@@ -102,7 +107,7 @@
             // 
             // btnAlta
             // 
-            this.btnAlta.Location = new System.Drawing.Point(537, 270);
+            this.btnAlta.Location = new System.Drawing.Point(679, 270);
             this.btnAlta.Name = "btnAlta";
             this.btnAlta.Size = new System.Drawing.Size(89, 34);
             this.btnAlta.TabIndex = 7;
@@ -112,7 +117,7 @@
             // 
             // btnBaja
             // 
-            this.btnBaja.Location = new System.Drawing.Point(537, 316);
+            this.btnBaja.Location = new System.Drawing.Point(679, 316);
             this.btnBaja.Name = "btnBaja";
             this.btnBaja.Size = new System.Drawing.Size(89, 34);
             this.btnBaja.TabIndex = 8;
@@ -122,7 +127,7 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(537, 366);
+            this.btnModificar.Location = new System.Drawing.Point(679, 366);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(89, 34);
             this.btnModificar.TabIndex = 9;
@@ -130,11 +135,45 @@
             this.btnModificar.UseVisualStyleBackColor = true;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rbModificacion);
+            this.groupBox1.Controls.Add(this.rbAltaBaja);
+            this.groupBox1.Location = new System.Drawing.Point(491, 264);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(182, 130);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Operación";
+            // 
+            // rbAltaBaja
+            // 
+            this.rbAltaBaja.AutoSize = true;
+            this.rbAltaBaja.Checked = true;
+            this.rbAltaBaja.Location = new System.Drawing.Point(32, 39);
+            this.rbAltaBaja.Name = "rbAltaBaja";
+            this.rbAltaBaja.Size = new System.Drawing.Size(107, 24);
+            this.rbAltaBaja.TabIndex = 0;
+            this.rbAltaBaja.TabStop = true;
+            this.rbAltaBaja.Text = "Alta - Baja";
+            this.rbAltaBaja.UseVisualStyleBackColor = true;
+            // 
+            // rbModificacion
+            // 
+            this.rbModificacion.AutoSize = true;
+            this.rbModificacion.Location = new System.Drawing.Point(32, 69);
+            this.rbModificacion.Name = "rbModificacion";
+            this.rbModificacion.Size = new System.Drawing.Size(122, 24);
+            this.rbModificacion.TabIndex = 1;
+            this.rbModificacion.Text = "Modificación";
+            this.rbModificacion.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(728, 450);
+            this.ClientSize = new System.Drawing.Size(925, 450);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnBaja);
             this.Controls.Add(this.btnAlta);
@@ -149,6 +188,8 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvPersonas)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,6 +207,9 @@
         private System.Windows.Forms.Button btnAlta;
         private System.Windows.Forms.Button btnBaja;
         private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rbModificacion;
+        private System.Windows.Forms.RadioButton rbAltaBaja;
     }
 }
 

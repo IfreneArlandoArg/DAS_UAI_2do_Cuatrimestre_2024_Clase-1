@@ -74,7 +74,7 @@ namespace Clase_1_Persona
         public static void Modificar(Persona pPersona, string pNuevoNombre, string pNuevoApellido, int pNuevaEdad)
         {
             Acceso acceso = new Acceso();
-            SqlCommand command = new SqlCommand($"UPDATE PERSONA SET NOMBRE = {pNuevoNombre}, APELLIDO = {pNuevoApellido}, Edad = {pNuevaEdad} WHERE ID_PERSONA = {pPersona.Id}", acceso.Abrir());
+            SqlCommand command = new SqlCommand($"UPDATE PERSONA SET NOMBRE = '{pNuevoNombre}', APELLIDO = '{pNuevoApellido}', Edad = {pNuevaEdad} WHERE ID_PERSONA = {pPersona.Id}", acceso.Abrir());
 
             command.ExecuteNonQuery();
 

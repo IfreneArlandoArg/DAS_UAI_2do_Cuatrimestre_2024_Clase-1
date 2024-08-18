@@ -105,5 +105,31 @@ namespace Clase_1_Persona
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void dtgvPersonas_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if(dtgvPersonas.SelectedRows.Count > 0) 
+                {
+                    if (rbModificacion.Checked) 
+                    {
+                        Persona pPersona = dtgvPersonas.SelectedRows[0].DataBoundItem as Persona;
+                        txtNombre.Text = pPersona.Nombre;
+                        txtApellido.Text = pPersona.Apellido;
+                        txtEdad.Text = pPersona.Edad.ToString();
+                    }
+                    else 
+                    {
+                        LimpiarTextBox();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
