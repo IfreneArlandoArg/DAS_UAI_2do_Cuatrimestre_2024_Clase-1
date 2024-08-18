@@ -9,3 +9,7 @@
 
 # Set up sugerido.
 * [Visual studio community free version](https://visualstudio.microsoft.com/free-developer-offers/)
+* [DOWNLOAD SQL SERVER DEVELOPER & SQL SERVER EXPRESS](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+* [Youtube tutos](https://www.youtube.com/@NicolasBattaglia)
+
+  # Happy coding!
