@@ -53,7 +53,13 @@ namespace Clase_1_Persona
         {
             try
             {
-                Persona.DarAlta(txtNombre.Text, txtApellido.Text, int.Parse(txtEdad.Text));
+                if (txtNombre.Text == string.Empty || txtApellido.Text == string.Empty || txtEdad.Text == string.Empty)
+                    throw new Exception("¡Todos los campos tienen qué estar completados con los datos asociados!");
+
+                if(!int.TryParse(txtEdad.Text, out int pEdad))
+                    throw new Exception("¡Edad tiene qué ser un valor numérico entero!");
+
+                Persona.DarAlta(txtNombre.Text, txtApellido.Text, pEdad);
                 Enlazar();
 
                 LimpiarTextBox();
@@ -62,7 +68,7 @@ namespace Clase_1_Persona
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "¡Error Operación Alta!");
             }
         }
 
@@ -70,6 +76,9 @@ namespace Clase_1_Persona
         {
             try
             {
+                if (dtgvPersonas.SelectedRows.Count == 0)
+                    throw new Exception("No hay Persona(s) seleccionados!!!");
+
                 Persona pPersona = dtgvPersonas.SelectedRows[0].DataBoundItem as Persona;
 
                 Persona.DarBaja(pPersona);
@@ -81,7 +90,7 @@ namespace Clase_1_Persona
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message,"¡Error Operación Baja!");
             }
         }
 
@@ -89,6 +98,9 @@ namespace Clase_1_Persona
         {
             try
             {
+                if (dtgvPersonas.SelectedRows.Count == 0)
+                    throw new Exception("No hay Persona(s) seleccionados!!!");
+
                 Persona pPersona = dtgvPersonas.SelectedRows[0].DataBoundItem as Persona;
 
              
@@ -102,7 +114,7 @@ namespace Clase_1_Persona
             catch (Exception ex)
             {
 
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message, "¡Error Operación Modificar!");
             }
         }
 

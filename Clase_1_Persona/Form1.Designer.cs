@@ -49,11 +49,12 @@
             // 
             this.dtgvPersonas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvPersonas.Location = new System.Drawing.Point(22, 12);
+            this.dtgvPersonas.MultiSelect = false;
             this.dtgvPersonas.Name = "dtgvPersonas";
             this.dtgvPersonas.RowHeadersWidth = 62;
             this.dtgvPersonas.RowTemplate.Height = 28;
             this.dtgvPersonas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvPersonas.Size = new System.Drawing.Size(693, 235);
+            this.dtgvPersonas.Size = new System.Drawing.Size(746, 235);
             this.dtgvPersonas.TabIndex = 0;
             this.dtgvPersonas.SelectionChanged += new System.EventHandler(this.dtgvPersonas_SelectionChanged);
             // 
@@ -167,12 +168,13 @@
             this.rbModificacion.TabIndex = 1;
             this.rbModificacion.Text = "Modificación";
             this.rbModificacion.UseVisualStyleBackColor = true;
+            this.rbModificacion.CheckedChanged += new System.EventHandler(this.dtgvPersonas_SelectionChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(925, 450);
+            this.ClientSize = new System.Drawing.Size(792, 450);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnBaja);
