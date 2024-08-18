@@ -3,7 +3,7 @@
   <Class Name="Clase_1_Persona.Form1" Collapsed="true">
     <Position X="7.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAQCAAAAAAAACAAAACAAAAAAAAAAUAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAQGQAAJAAAACAAAICCCAAABABAAUIIAAACAA=</HashCode>
       <FileName>Form1.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -29,14 +29,14 @@
   <Class Name="Clase_1_Persona.Persona">
     <Position X="0.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAEAAAAAEAAAAgAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAEAAAAAMCAAAgAAAAAAAAgAAAAAAAAACAAA=</HashCode>
       <FileName>Persona.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Clase_1_Persona.Acceso">
-    <Position X="3.5" Y="0.75" Width="1.5" />
+    <Position X="2.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AABAAAAAAAACAAAAAAABAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AABAAAAAAAAAAAAAAAABAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Acceso.cs</FileName>
     </TypeIdentifier>
   </Class>
