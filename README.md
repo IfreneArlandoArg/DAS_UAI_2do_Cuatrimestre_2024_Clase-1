@@ -1,4 +1,4 @@
-### 2do Cuatrimestre 2024
+## 2do Cuatrimestre 2024
 
 **Clase 1 : ABML Persona ADO .Net Connected**
 
