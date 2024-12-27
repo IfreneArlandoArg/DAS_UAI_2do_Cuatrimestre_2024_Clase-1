@@ -7,7 +7,7 @@
 <img src="UI/Captura%20de%20pantalla%202024-08-18%20151503.png" alt="UI" width="300"/>
 </p>
 
-# Set up sugerido.
+# Set up sugerrido.
 * [Visual studio community free version](https://visualstudio.microsoft.com/free-developer-offers/)
 * [DOWNLOAD SQL SERVER DEVELOPER & SQL SERVER EXPRESS](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 * [Youtube tutorials](https://www.youtube.com/@NicolasBattaglia)
